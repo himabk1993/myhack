@@ -1,0 +1,19 @@
+<html>
+<head>
+      <script type = "text/javascript"
+         src = "{{ url_for('static', filename = 'hello.js') }}" ></script>
+      <style type="text/css">
+      .bg-sample{
+        background:yellow
+      }
+      </style>
+</head>
+<body class="bg-sample">
+      <form action = "http://localhost:5000/login" method = "get">
+         <p style="color:00FF00">Enter Name:</p>
+         <p><input type = "text" name = "nm" /></p>
+         <p><input type = "submit" value = "submit" /></p>
+         <input type = "button" onclick = "sayHello()" value = "Say Hello" />
+      </form>
+   </body>
+</html>
